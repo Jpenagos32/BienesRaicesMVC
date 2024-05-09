@@ -1,0 +1,19 @@
+{
+    "name": "julia/bienesraices",
+    "description": "Creando un proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "jpenagos32",
+            "email": "jpenagosdev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models"
+        }
+    },
+    "require": {
+        "intervention/image": "^3.5"
+    }
+}
