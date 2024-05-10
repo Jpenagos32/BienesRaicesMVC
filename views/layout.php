@@ -54,6 +54,7 @@ if (!isset($inicio)) {
   </header>
 
   <?php
+  //? Este contenido proviene de Router.php -> render()
   echo $contenido;
   ?>
 

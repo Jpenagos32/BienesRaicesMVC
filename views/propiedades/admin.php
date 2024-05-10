@@ -1,3 +1,4 @@
-<h1>Admin</h1>
-<p>Desde la vista</p>
-<em>PROBANDO</em>
+<?php 
+echo $mensaje;
+echo '<br>';
+echo $propiedad;

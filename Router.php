@@ -31,7 +31,15 @@ class Router {
   }
 
   // Muestra una vista
-  public function render($view) {
+  public function render($view, $datos = []) {
+    //? Lo que venga en datos se pasará como variable a las vistas gracias a este foreach
+    foreach ($datos as $key => $value) {
+      //? lo que hace es crear una variable con el nombre que se encuentre en la key
+      //? por ejemplo viene una key llamada mensaje, esto lo que hará es crear una variable llamada mensaje
+      //? 'mensaje' = $mensaje
+      $$key = $value;
+    }
+
     // ? inicia el almacenamiento en memoria a partir de la linea de ob_start
     ob_start();
     include __DIR__ . "/views/$view.php";
