@@ -6,6 +6,8 @@
 
 Si quieres correr el proyecto dentro de tu máquina local debes seguir lo siguientes pasos
 
+Entry point: `/public/index.php`.s
+
 ## Para poder correr el proyecto:
 
 ### Tener un servidor local
