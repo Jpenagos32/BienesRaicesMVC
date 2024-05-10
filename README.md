@@ -18,7 +18,7 @@ Se debe contar con un servidor local como apache, se debe tener instalado php y 
 
 se debe crear una Base de datos MySQL llamada `bienesraices_crud`
 
-una forma de crear rapidamente la base de datos es importar o correr el script que se encuentra en `bienesraices_crud.sql`, esto creará la base de datos, creará las tablas e insertará los datos dentro de la base de datos
+una forma de crear rapidamente la base de datos es importar o correr el script que se encuentra en `ScriptsSQL/bienesraices_crud.sql`, esto creará la base de datos, creará las tablas e insertará los datos dentro de la base de datos
 
 ### Instalar dependencias
 
@@ -29,8 +29,10 @@ una forma de crear rapidamente la base de datos es importar o correr el script q
 
 ### Una vez instaladas las dependencias
 
-Se debe correr el comando
+- Se debe correr el comando
 `gulp` también en la terminal, de esta forma nos aseguramos que carguen correctamente los estilos de la página
+
+- Tambien es necesario servir el proyecto, ingresando a la carpeta `public` desde la terminal y ejecutar el comando `php -S localhost:3000` (el puerto 3000 puede ser reemplazado por cualquier otro puerto disponible).
 
 ### Una vez en la pagina
 

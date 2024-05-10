@@ -21,12 +21,17 @@ class Router {
     }
 
     if ($fn) {
-      //como funciona-> https://www.php.net/manual/es/function.call-user-func.php 
       // ? el segundo parametro ($this) está haciendo que la funcion que se pasa ($fn) tenga acceso a todos los 
       // ? métodos y propiedades de esta clase
       call_user_func($fn, $this);
+      //como funciona-> https://www.php.net/manual/es/function.call-user-func.php 
     } else {
       echo "Pagina no encontrada";
     }
+  }
+
+  // Muestra una vista
+  public function render($view) {
+    include __DIR__ . "/views/$view.php";
   }
 }
