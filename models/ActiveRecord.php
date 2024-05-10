@@ -48,7 +48,7 @@ class ActiveRecord {
     // Mensaje de exito o error
     if ($resultado) {
       // Redireccionar al usuario
-      header('Location: /bienesraices/admin?resultado=1');
+      header('Location: /admin?resultado=1');
     }
   }
 
@@ -69,7 +69,7 @@ class ActiveRecord {
 
     if ($resultado) {
       // Redireccionar al usuario
-      header('Location: /bienesraices/admin?resultado=2');
+      header('Location: /admin?resultado=2');
     }
   }
 
@@ -80,7 +80,7 @@ class ActiveRecord {
 
     if ($resultado) {
       $this->borrarImagen();
-      header('location: /bienesraices/admin?resultado=3');
+      header('location: /admin?resultado=3');
     }
   }
 
