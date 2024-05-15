@@ -10,7 +10,7 @@
   <?php } ?>
 
   <!-- el enctype es para poder subir archivos debe ponerse como está debajo de esta linea -->
-  <form action="" class="formulario" method="POST" action='/admin/vendedores/actualizar.php'>
+  <form action="" class="formulario" method="POST" action='/vendedores/actualizar'>
     <?php include __DIR__ . '/formulario.php'?>
     <input type="submit" value="Guardar Cambios" class="boton boton-verde">
   </form>
