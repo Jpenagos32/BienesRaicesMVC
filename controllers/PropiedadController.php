@@ -136,7 +136,6 @@ class PropiedadController {
       if ($id) {
 
         $tipo = $_POST['tipo'];
-
         if (validarTipoContenido($tipo)) {
           $propiedad = Propiedad::find($id);
           $propiedad->eliminar();
