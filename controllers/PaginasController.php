@@ -64,8 +64,15 @@ class PaginasController {
    * @param Router $router instacia de router
    * 
    */
-  public static function propiedad() {
-    echo "Desde Propiedad";
+  public static function propiedad(Router $router) {
+    $id = validarORedireccionar('/propiedades');
+
+    // buscar la propiedad por su id
+    $propiedad = Propiedad::find($id);
+
+    $router->render('paginas/propiedad', [
+      'propiedad' => $propiedad
+    ]);
   }
 
   /**
