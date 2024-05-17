@@ -55,3 +55,23 @@ Password: 123456
   - Dependencia utilizada para poder enviar emails desde php
   - Enlace a [Packagist](https://packagist.org/packages/phpmailer/phpmailer).
   - Para poder funcionar requiere un servidor o proveedor como [Mailtrap](https://mailtrap.io/)
+
+- `vlucas/phpdotenv`: 
+  - Libreria para poder usar variables de entorno dentro de php
+  - [Repositorio con documentacion](https://github.com/vlucas/phpdotenv)
+
+### Variables de entorno
+
+En la raiz de proyecto debe haber un archivo `.env` donde se incluyan las variables de entorno que serán tomadas de [Mailtrap](https://mailtrap.io/)
+
+Dentro de mailtrap para obetener las variables de entorno se debe ir al inbox seleccionar el inbox que tengamos y en la sección de integraciones seleccionar `PHP` y `laravel 9+` eso nos dará las variables de entorno.
+
+Las variables de entorno deben tener la siguiente estructura
+
+```
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=YOUROWNUSERNAME
+MAIL_PASSWORD=YOUROWNPASSWORD
+```
