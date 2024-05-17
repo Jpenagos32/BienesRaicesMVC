@@ -36,8 +36,8 @@ class PaginasController {
    * @static
    * @param Router $router instacia de router
    **/
-  public static function nosotros() {
-    echo "Desde nosotros";
+  public static function nosotros(Router $router) {
+    $router->render('paginas/nosotros');
   }
 
   /**
