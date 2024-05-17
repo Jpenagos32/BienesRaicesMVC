@@ -47,8 +47,12 @@ class PaginasController {
    * @param Router $router instacia de router
    * 
    **/
-  public static function propiedades() {
-    echo "Desde Propiedades";
+  public static function propiedades(Router $router) {
+    $propiedades = Propiedad::all();
+
+    $router->render('paginas/propiedades', [
+      'propiedades' => $propiedades
+    ]);
   }
 
   /**
