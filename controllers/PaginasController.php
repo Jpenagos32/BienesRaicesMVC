@@ -19,7 +19,7 @@ class PaginasController {
    * @access public
    * @static
    * @return void
-   * @param Router $router instacia de router
+   * @param Router $router Instancia del enrutador
    **/
   public static function index(Router $router): void {
     $inicio = true;
@@ -36,7 +36,7 @@ class PaginasController {
    * 
    * @access public
    * @static
-   * @param Router $router instacia de router
+   * @param Router $router Instancia del enrutador
    **/
   public static function nosotros(Router $router) {
     $router->render('paginas/nosotros');
@@ -46,7 +46,7 @@ class PaginasController {
    * Función encargada de renderizar Propiedades
    * @access public
    * @static
-   * @param Router $router instacia de router
+   * @param Router $router Instancia del enrutador
    * 
    **/
   public static function propiedades(Router $router) {
@@ -63,7 +63,7 @@ class PaginasController {
    * @access public
    * @author Julian Penagos <jpenagosdev@gmail.com> 
    * @static
-   * @param Router $router instacia de router
+   * @param Router $router Instancia del enrutador
    * 
    */
   public static function propiedad(Router $router) {
@@ -83,7 +83,7 @@ class PaginasController {
    * @author Julian Penagos <jpenagosdev@gmail.com>
    * @access public
    * @static
-   * @param Router $router instacia de router
+   * @param Router $router Instancia del enrutador
    * 
    **/
   public static function blog(Router $router) {
@@ -96,7 +96,7 @@ class PaginasController {
    * @author Julian Penagos <jpenagosdev@gmail.com>
    * @access public
    * @static
-   * @param Router $router instacia de router
+   * @param Router $router Instancia del enrutador
    * 
    **/
   public static function entrada(Router $router) {
@@ -104,12 +104,15 @@ class PaginasController {
   }
 
   /**
-   * Función encargada de renderizar contacto
+   * Función encargada de manejar los metodos a usar en el contacto
+   * 
+   * Esta función tambien se encarga de manejar la petición de tipo post
+   * en la cual se realiza el envio del email
    *
    * @author Julian Penagos <jpenagosdev@gmail.com>
    * @access public
    * @static
-   * @param Router $router instacia de router
+   * @param Router $router instacia del enrutador
    * 
    **/
   public static function contacto(Router $router) {
