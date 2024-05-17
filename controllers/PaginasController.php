@@ -110,11 +110,12 @@ class PaginasController {
    * @param Router $router instacia de router
    * 
    **/
-  public static function contacto() {
-    echo "Desde contacto";
+  public static function contacto(Router $router) {
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      echo "soy un post";
+      debuguear($_POST);
     }
+
+    $router->render('paginas/contacto', []);
   }
 }
