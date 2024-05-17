@@ -46,7 +46,12 @@ Password: 123456
 
 ### Dependencias
 
-`intervention image` version 2:
+- `intervention image` version 2:
 
--   Es para el procesamiento de imagenes.
--   Leer la [Documentacion](https://image.intervention.io/v3) (requiere `PHP 8.1` o superior)
+  - Es para el procesamiento de imagenes.
+  - Leer la [Documentacion](https://image.intervention.io/v3) (requiere `PHP 8.1` o superior)
+
+- `PHPMailer`:
+  - Dependencia utilizada para poder enviar emails desde php
+  - Enlace a [Packagist](https://packagist.org/packages/phpmailer/phpmailer).
+  - Para poder funcionar requiere un servidor o proveedor como [Mailtrap](https://mailtrap.io/)
