@@ -84,8 +84,8 @@ class PaginasController {
    * @param Router $router instacia de router
    * 
    **/
-  public static function blog() {
-    echo "Desde Blog";
+  public static function blog(Router $router) {
+    $router->render('paginas/blog');
   }
 
   /**
@@ -97,8 +97,8 @@ class PaginasController {
    * @param Router $router instacia de router
    * 
    **/
-  public static function entrada() {
-    echo "Desde entrada";
+  public static function entrada(Router $router) {
+    $router->render('paginas/entrada');
   }
 
   /**
