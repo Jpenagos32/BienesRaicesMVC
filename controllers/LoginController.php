@@ -10,7 +10,30 @@ class LoginController {
     $errores = [];
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      echo 'Autenticando...';
+      $auth = new Admin($_POST);
+
+      $errores = $auth->validar();
+
+      if (empty($errores)) {
+        // Verificar si el usuario existe
+        $resultado = $auth->existeUsuario();
+
+        if (!$resultado) {
+
+          $errores = Admin::getErrores();
+        } else {
+          // Verificar el password
+          $autenticado = $auth->comprobarPassword($resultado);
+
+          if ($autenticado) {
+            // Autenticar el usuario
+
+          } else {
+            // Password incorrecto mensaje de error
+            $errores = Admin::getErrores();
+          }
+        }
+      }
     }
 
     $router->render('auth/login', [
