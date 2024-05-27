@@ -1,5 +1,12 @@
 <main class="contenedor seccion">
   <h1>Contacto</h1>
+
+  <?php
+  if ($mensaje) {
+    echo "<p class = 'alerta exito'>$mensaje</p>";
+  }
+  ?>
+
   <picture>
     <source srcset="build/img/destacada3.webp" type="image/webp" />
     <source srcset="build/img/destacada3.jpeg" type="image/jpeg" />
@@ -13,12 +20,6 @@
 
       <label for="nombre">Nombre</label>
       <input type="text" name="contacto[nombre]" id="nombre" placeholder="Tu Nombre" />
-
-      <label for="email">E-mail</label>
-      <input type="email" name="contacto[email]" id="email" placeholder="Tu Email" />
-
-      <label for="telefono">Teléfono</label>
-      <input type="tel" name="contacto[telefono]" id="telefono" placeholder="Tu Telefono" />
 
       <label for="mensaje">Mensaje:</label>
       <textarea name="contacto[mensaje]" id="mensaje" cols="30" rows="10"></textarea>
@@ -48,14 +49,9 @@
         <label for="contactar-email">E-Mail</label>
         <input type="radio" name="contacto[contacto]" id="contactar-email" value="email" />
       </div>
+      <div id="contacto"></div>
 
-      <p>Si eligio teléfono elija la fecha y la hora</p>
 
-      <label for="fecha">Fecha</label>
-      <input type="date" name="contacto[fecha]" id="fecha" />
-
-      <label for="hora">Hora</label>
-      <input type="time" name="contacto[hora]" id="hora" min="09:00" max="18:00" />
     </fieldset>
 
     <input type="submit" id="Enviar" value="Enviar" class="boton-verde" />
