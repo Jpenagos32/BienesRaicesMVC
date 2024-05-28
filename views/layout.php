@@ -40,7 +40,7 @@ if (!isset($inicio)) {
             <?php if ($auth) { ?>
               <a href="/logout">Cerrar Sesión</a>
             <?php } else if (!$auth) { ?>
-              <a href="login.php">Iniciar Sesión</a>
+              <a href="/login">Iniciar Sesión</a>
             <?php } ?>
           </nav>
         </div>
