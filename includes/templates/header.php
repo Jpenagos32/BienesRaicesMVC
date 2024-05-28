@@ -37,7 +37,7 @@ $auth = $_SESSION['login'] ?? false;
                         <?php if ($auth) { ?>
                             <a href="/bienesraices/cerrar-sesion.php">Cerrar Sesión</a>
                         <?php } else if (!$auth) { ?>
-                            <a href="login.php">Iniciar Sesión</a>
+                            <a href="/login">Iniciar Sesión</a>
                         <?php } ?>
                     </nav>
                 </div>
